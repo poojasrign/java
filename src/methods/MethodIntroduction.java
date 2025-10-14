@@ -7,7 +7,7 @@ public class MethodIntroduction {
 		int b=sc.nextInt();
 		int res=a+b;
 		System.out.println(res);
-		sc.close();
+		
 	}
 	public static void main(String args[]) {
 		MethodIntroduction obj = new MethodIntroduction();
@@ -20,5 +20,6 @@ public class MethodIntroduction {
 		System.out.println("Method calling 3");
 		obj.add();
 		System.out.println("Method Return 3");
+		
 	}
 }

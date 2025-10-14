@@ -1,15 +1,13 @@
 package methods;
 
 public class ClassNameAsReturnType {
-	public class Practice {
-
-		Practice meth(Practice o) {
+		ClassNameAsReturnType meth(ClassNameAsReturnType o) {
 
 			System.out.println(o);
 
 			System.out.println("What will be the return type of this meth");
 
-			Practice p=new Practice();
+			ClassNameAsReturnType p=new ClassNameAsReturnType();
 
 			System.out.println(p);
 
@@ -26,12 +24,12 @@ public class ClassNameAsReturnType {
 
 			System.out.println(v);
 
-			//Practice r = v.meth(v);
+			ClassNameAsReturnType r = v.meth(v);
 
-			//System.out.println(r); 
+			System.out.println(r); 
 
 		}
 
-	}
+	
 
 }

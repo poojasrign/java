@@ -1,0 +1,54 @@
+/*  only for entering the end value just change in the program  
+System.out.println(prefix_sum[end]-prefix_sum[start-1]); as System.out.println(prefix_sum[end]);
+5 // N
+2 4 6 8 10 //Array Element
+3 // Number of testcase
+0 //last index valu to stop
+2  value
+3 //last index valu to stop
+20
+4//last index valu to stop
+30 value
+*/
+/*   For entering the starting value and end value
+*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n= sc.nextInt(); //5
+		int arr[]= new int[n]; // [0,0,0,0,0]
+		for(int i=0; i<n; i++) {
+			arr[i]=sc.nextInt();
+		}
+		int[] prefix_sum = new int[n]; // [0,0,0,0,0]
+		prefix_sum[0] = arr[0]; //[2,0,0,0,0]
+		for(int i = 1 ; i<n; i++) {
+			prefix_sum[i] = prefix_sum[i-1]+arr[i]; // i = 1//[2,4,6,8,12]
+		}
+		int q = sc.nextInt();
+		for(int i = 0 ; i <q;i++) {
+		    int start=sc.nextInt();
+			int end = sc.nextInt();
+			if (start == 0) {
+                System.out.println(prefix_sum[end]);
+			}
+            else {
+			    System.out.println(prefix_sum[end]-prefix_sum[start-1]); 
+            }
+		}
+    }
+}
+
+Output:
+5
+2 4 6 8 10
+3
+0 1
+6
+0 4
+30
+2 4
+24

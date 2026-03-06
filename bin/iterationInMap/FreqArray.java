@@ -1,7 +1,4 @@
-package iterationInMap;
-
 import java.util.HashMap;
-
 public class FreqArray {
 	public static void main(String[] args) {
 
@@ -49,3 +46,4 @@ public class FreqArray {
 	}
 
 }
+

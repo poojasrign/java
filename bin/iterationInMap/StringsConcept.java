@@ -1,4 +1,3 @@
-package iterationInMap;
 import java.util.LinkedHashMap;
 
 public class StringsConcept {
@@ -34,5 +33,6 @@ public class StringsConcept {
 		char op=maxChar(st);
 		System.out.println(op);
 	}
+
 
 }

@@ -1,4 +1,3 @@
-package iterationInMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 public class FreqString {
@@ -36,4 +35,5 @@ public class FreqString {
 		String op=maxChar(st);
 		System.out.println(op);
 	}
+
 }
